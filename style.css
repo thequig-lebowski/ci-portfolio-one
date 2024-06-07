@@ -13,6 +13,7 @@
 
 /* Page-wide styles */
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -26,3 +27,15 @@ a {
     text-decoration: none;
 }
 
+/* Main Content Styles */
+main {
+    background-color: pink;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: sandybrown;
+}
