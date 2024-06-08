@@ -65,11 +65,35 @@ a {
 
 /* Main Content Styles */
 main {
-    background-color: pink;
     /* flex properties x3 keep footer at bottom */
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
+    margin-top: 53px;
+}
+
+#banner {
+    background: url(https://placehold.co/1000x600/orange/white?text=Hero+Image) no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#banner-text {
+    background-color: coral;
+    text-align: center;
+    width: 75%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: -20px;
+}
+
+#about {
+    margin-top: 20px;
+    background-color: tan;
 }
 
 /* Footer Styles */
