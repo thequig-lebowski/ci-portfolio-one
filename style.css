@@ -18,6 +18,10 @@ body {
     flex-direction: column;
 }
 
+h2 {
+    padding: 10px 0;
+}
+
 /* Header */
 header {
     display: flex;
@@ -101,9 +105,26 @@ main {
     left: 15px;
 }
 
-#about {
+#about, #why-stay {
     margin-top: 20px;
     background-color: tan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-img {
+    width: 90vw;
+    height: 100px;
+    background: url(https://placehold.co/400x200/red/white?text=sunny+meadow+with+tents) no-repeat center;
+    margin-bottom: 10px;
+}
+
+#why-stay-img {
+    width: 90vw;
+    height: 100px;
+    background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
+    margin-bottom: 10px;
 }
 
 /* Footer Styles */
