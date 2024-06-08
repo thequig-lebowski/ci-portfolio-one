@@ -29,6 +29,15 @@ header {
     align-items: baseline;
     justify-content: space-between;
 }
+#logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+#logo-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
 
 #menu {
     list-style-type: none;
