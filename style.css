@@ -33,10 +33,12 @@ header {
     align-items: baseline;
     justify-content: space-between;
 }
+
 #logo-container {
     display: flex;
     justify-content: space-between;
 }
+
 #logo-img {
     height: 30px;
     width: 30px;
@@ -48,7 +50,7 @@ header {
     font-size: 115%;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1rem;
     text-align: right;
 }
@@ -105,7 +107,8 @@ main {
     left: 15px;
 }
 
-#about, #why-stay {
+#about,
+#why-stay {
     margin-top: 20px;
     background-color: tan;
     display: flex;
@@ -130,4 +133,13 @@ main {
 /* Footer Styles */
 footer {
     background-color: sandybrown;
+    /* flex-direction: column; */
+
+}
+
+footer ul {
+    display: flex;
+    width: 90vw;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
