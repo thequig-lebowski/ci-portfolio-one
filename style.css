@@ -78,17 +78,18 @@ main {
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 #banner-text {
-    background-color: coral;
+    background-color: rgba(199, 33, 191, 0.6);
     text-align: center;
     width: 75%;
     padding-top: 15px;
     padding-bottom: 20px;
     position: absolute;
     bottom: -20px;
+    left: 15px;
 }
 
 #about {
