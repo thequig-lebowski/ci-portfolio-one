@@ -168,6 +168,7 @@ footer ul {
 @media (min-width: 640px) {
   .mq-container {
     max-width: 640px;
+    border: solid black 1px;
   }
 }
 
