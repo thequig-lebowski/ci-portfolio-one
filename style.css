@@ -2,147 +2,199 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile container utility class */
+.mq-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: solid red 1px;
 }
 
 /* Page-wide styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 /* Header */
 header {
-    display: flex;
-    background-color: aqua;
-    padding: .5rem 1rem;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    align-items: baseline;
-    justify-content: space-between;
+  display: flex;
+  background-color: aqua;
+  padding: .5rem 1rem;
+  /* width: 100%; */
+  position: fixed;
+  /* bottom: 10%; */
+  z-index: 100;
+  align-items: baseline;
+  justify-content: space-between;
+  align-self: center;
 }
 
 #logo-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #logo-img {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 
 #menu {
-    list-style-type: none;
-    font-size: 115%;
+  list-style-type: none;
+  font-size: 115%;
 }
 
 #menu>li {
-    margin-bottom: 1rem;
-    text-align: right;
+  margin-bottom: 1rem;
+  text-align: right;
 }
 
 /* Dropdown Navbar */
 nav {
-    position: absolute;
-    background-color: aqua;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    display: none;
-    top: 100%;
+  position: absolute;
+  background-color: aqua;
+  width: 50%;
+  right: 0;
+  padding: 0 1rem;
+  display: none;
+  top: 100%;
 }
 
 #nav-toggle:checked~nav {
-    display: block;
+  display: block;
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Main Content Styles */
 main {
-    /* flex properties x3 keep footer at bottom */
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: auto;
-    margin-top: 53px;
+  /* flex properties x3 keep footer at bottom */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 #banner {
-    background: url(https://placehold.co/1000x600/orange/white?text=Hero+Image) no-repeat center center/cover;
-    height: 500px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    /* justify-content: flex-end; */
+  background: url(https://placehold.co/1000x600/orange/white?text=Hero+Image) no-repeat center center/cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 74px;
+  /* margin-top: 20px; */
+  /* justify-content: flex-end; */
 }
 
 #banner-text {
-    background-color: rgba(199, 33, 191, 0.6);
-    text-align: center;
-    width: 75%;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    position: absolute;
-    bottom: -20px;
-    left: 15px;
+  background-color: rgba(199, 33, 191, 0.6);
+  text-align: center;
+  width: 75%;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
 }
 
 #about,
-#why-stay {
-    margin-top: 20px;
-    background-color: tan;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#why-stay,
+footer {
+  margin-top: 20px;
+  background-color: tan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #about-img {
-    width: 90vw;
-    height: 100px;
-    background: url(https://placehold.co/400x200/red/white?text=sunny+meadow+with+tents) no-repeat center;
-    margin-bottom: 10px;
+  width: 90vw;
+  height: 100px;
+  background: url(https://placehold.co/400x200/red/white?text=sunny+meadow+with+tents) no-repeat center;
+  margin-bottom: 10px;
 }
 
 #why-stay-img {
-    width: 90vw;
-    height: 100px;
-    background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
-    margin-bottom: 10px;
+  width: 90vw;
+  height: 100px;
+  background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
+  margin-bottom: 10px;
 }
 
 /* Footer Styles */
-footer {
-    background-color: sandybrown;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
+footer {}
 
 footer ul {
-    width: 90vw;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    font-size: 150%;
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-size: 150%;
+}
+
+/* Media Queries */
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+    border: solid blue 1px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .mq-container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .mq-container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .mq-container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .mq-container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .mq-container {
+    max-width: 1536px;
+  }
 }
