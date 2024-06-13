@@ -152,7 +152,7 @@ main {
   height: 20px;
   width: 100%;
   position: relative;
-  bottom: 20px;
+  bottom: 19px;
 }
 
 #banner-text {
@@ -192,14 +192,14 @@ footer {
 }
 
 #why-stay-img {
-  width: 90vw;
+  width: 90%;
   height: 100px;
   background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
   margin-bottom: 10px;
 }
 
 #activities-img {
-  width: 90vw;
+  width: 90%;
   height: 100px;
   background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
   margin-bottom: 10px;
@@ -210,7 +210,9 @@ footer {
 }
 
 /* Footer Styles */
-footer {}
+footer {
+
+}
 
 footer ul {
   width: 90vw;
@@ -245,7 +247,33 @@ footer ul {
 
   #banner,
   .overlay {
-    background-position: bottom;
+    /* background-position: bottom; */
+  }
+
+  header {
+    padding-right: 1rem;
+  }
+
+  nav {
+    display: block;
+    position: relative;
+    width: fit-content;
+    max-width: 300px;
+
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    align-content: end;
+  }
+
+  #menu li {
+    font-size: 1rem;
+    padding-left: 1.5rem;
   }
 }
 
