@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Global CSS Resets */
 *,
 *::before,
@@ -11,6 +14,15 @@
   box-sizing: border-box;
 }
 
+/* Page-wide styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: #f2f7f7;
+}
+
 /* Mobile container utility class */
 .mq-container {
   width: 100%;
@@ -20,14 +32,6 @@
   padding-right: 0.5rem;
   border: solid red 1px;
 }
-
-/* Page-wide styles */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 h2 {
   padding: 10px 0;
 }
@@ -35,7 +39,6 @@ h2 {
 /* Header */
 header {
   display: flex;
-  background-color: aqua;
   padding: .5rem 1rem;
   /* width: 100%; */
   position: fixed;
@@ -99,8 +102,8 @@ main {
 }
 
 #banner {
-  background: url(https://placehold.co/1000x600/orange/white?text=Hero+Image) no-repeat center center/cover;
-  height: 500px;
+  background: url(assets/images/pexels-blooddrainer-213172.jpg) no-repeat center center/cover;
+  height: 40vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -110,14 +113,17 @@ main {
 }
 
 #banner-text {
-  background-color: rgba(199, 33, 191, 0.6);
+  /* background-color: rgba(199, 33, 191, 0.6); */
   text-align: center;
   width: 75%;
   padding-top: 15px;
   padding-bottom: 20px;
   position: absolute;
-  bottom: -20px;
-  left: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* bottom: -20px;
+  left: 15px; */
 }
 
 #about,
