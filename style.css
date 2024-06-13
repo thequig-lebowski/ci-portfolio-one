@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  color: #f2f7f7;
+  color: #000000;
 }
 
 /* Mobile container utility class */
@@ -28,8 +28,8 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  /* padding-left: 0.5rem;
+  padding-right: 0.5rem; */
   /* border: solid red 1px; */
 }
 
@@ -40,8 +40,8 @@ h2 {
 /* Header */
 header {
   display: flex;
-  padding: .5rem 1rem;
-  margin-top: .5rem;
+  padding: 1rem 1rem .5rem 1rem;
+  /* margin-top: .5rem; */
   /* width: 100%; */
   position: fixed;
   /* bottom: 10%; */
@@ -50,6 +50,7 @@ header {
   justify-content: space-between;
   align-self: center;
   color: black;
+  background-color: white;
 }
 
 #logo-container {
@@ -132,16 +133,16 @@ main {
   width: 100%;
   position: relative;
   display: flex;
-  margin-top: 74px;
+  margin-top: 54px;
   /* margin-top: 20px; */
   /* justify-content: flex-end; */
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.4);
-  border: solid green 1px;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  /* border: solid green 1px; */
+  /* margin-left: -0.5rem;
+  margin-right: -0.5rem; */
   width: 100%;
   height: 100%;
 }
@@ -155,24 +156,27 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
   /* bottom: -20px;
   left: 15px; */
 }
 
 #about,
 #why-stay,
+#activities,
 footer {
   margin-top: 20px;
-  background-color: tan;
+  /* background-color: tan; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: .5rem 1rem;
 }
 
 #about-img {
   width: 90vw;
   height: 100px;
-  background: url(https://placehold.co/400x200/red/white?text=sunny+meadow+with+tents) no-repeat center;
+  background: url(assets/images/kieran-sheehan-tKIw44Q2Zro-unsplash.jpg) no-repeat center center/cover;
   margin-bottom: 10px;
 }
 
@@ -181,6 +185,17 @@ footer {
   height: 100px;
   background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
   margin-bottom: 10px;
+}
+
+#activities-img {
+  width: 90vw;
+  height: 100px;
+  background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
 }
 
 /* Footer Styles */
