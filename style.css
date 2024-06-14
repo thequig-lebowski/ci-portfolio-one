@@ -215,6 +215,7 @@ footer {
   border: solid black 1px;
   border-radius: 4px;
   padding: 1rem;
+  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
