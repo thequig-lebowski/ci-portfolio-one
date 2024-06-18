@@ -111,7 +111,7 @@ nav {
   margin-right: 1rem;
   font-size: 1.5rem;
   align-self: center;
-} 
+}
 
 a {
   text-decoration: none;
@@ -216,21 +216,27 @@ footer {
   border-radius: 4px;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; */
 }
 
 .info-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
 }
 
 .card img {
   border-radius: 5px;
   width: 100%;
-  align-self: flex-start;
+  /* align-self: flex-start; */
+  /* max-width: 606px; */
   /* flex: 1; */
+}
+
+.accom-img {
+  /* display: block; */
 }
 
 .accom-info {
@@ -242,22 +248,13 @@ footer {
 }
 
 .accom-info button {
+
   margin-left: auto;
   margin-right: 0;
 }
 
-/* .card h2 {
-  align-self: flex-end;
-}
-
-.card p {
-  align-self: center;
-} */
-
 /* Footer Styles */
-footer {
-
-}
+footer {}
 
 footer ul {
   width: 90vw;
@@ -329,6 +326,32 @@ footer ul {
     background: url(assets/images/brushstroke_small.png) no-repeat center center/cover;
     background-size: 100% 19px;
     background-position: center;
+  }
+
+  .card {
+    /* position: relative; */
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .info-container {
+    position: relative;
+  }
+
+  .accom-img {
+    min-width: 400px;
+    float: inline-start;
+    border: solid red 1px;
+    margin-right: 1rem;
+  }
+
+  .accom-info {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* right: 0px; */
   }
 }
 
