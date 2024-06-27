@@ -473,11 +473,17 @@ footer ul {
     max-width: 1024px;
   }
 
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .card {
     /* position: relative; */
     /* overflow: hidden; */
     display: block;
-    width: 45%;
+    width: 49%;
     /* flex-direction: row; */
     /* flex-wrap: nowrap; */
   }
@@ -488,6 +494,7 @@ footer ul {
 
   .accom-info {
     position: relative;
+    /* bottom: 20px; */
   }
 
   .accom-img {
