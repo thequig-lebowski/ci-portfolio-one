@@ -477,8 +477,9 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* border: solid red 1px; */
   }
-
+  
   .card {
     /* position: relative; */
     /* overflow: hidden; */
@@ -504,6 +505,25 @@ footer ul {
     /* border: solid red 1px; */
     /* margin-right: 1rem; */
   }
+
+  #contact,
+  #map {
+    width: 49%;
+  }
+
+  #contact-wrapper {
+    /* flex-wrap: wrap-reverse; */
+    align-items: baseline;
+  }
+
+  #contact {
+    order: 2;
+  }
+
+  #contact button {
+    margin-right: auto;
+  }
+
 
 }
 
