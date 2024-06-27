@@ -212,6 +212,13 @@ footer {
 }
 
 /* Glamping Styles */
+#glamping-banner {
+  background: url(assets/images/luxuryint.jpg) no-repeat center center/cover;
+  height: 20vh;
+  width: 100%;
+  position: relative;
+}
+
 .card {
   border: solid black 1px;
   border-radius: 4px;
