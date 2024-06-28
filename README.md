@@ -85,6 +85,8 @@ Allowing the user to book by inputting check in/out dates would be a great addit
 #### Image Gallery
 Another feature to add would be a image carousel, allowing the user to scroll through multiple photos of each dwelling type.
 
+---
+
 ## Technologies Used
 * HTML - The main structure and layout of the page
 * CSS - The styling of the page
@@ -96,7 +98,7 @@ Another feature to add would be a image carousel, allowing the user to scroll th
 * Google Fonts - used to style the main section of the game
 * Lighthouse - used for testing the performance and accessibility of the site
 * W3C Markup Validator - used to check the markup of the site and ensure there were no major errors.
-
+---
 ## Testing
 ### Device Testing
 * From very early in devolpment the site was hosted live on github pages, this allowed me thoroughly check everything was working. One problem I encountered early on was incorrect file paths, I had started using absolute file paths but soon realised this wouldn't work universally so I changed it to relative file paths.
@@ -109,3 +111,64 @@ Another feature to add would be a image carousel, allowing the user to scroll th
 
 <img src="assets/images/lighthouse.PNG" alt="lighthouse score">
 
+I used lighthouse to check the performance of this site and to make sure it was up to standard. 
+
+I used the W3C online validation tools to validate both the CSS as well as all the html files in this project. Thankfully there were no isuses and everything passed.
+
+---
+## Deployment
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the GitHub Repository.
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+<br>
+
+---
+
+## Credits
+### Code
+The vast majority of this project is a combination of the study I've done with Code Institute as well as trial and error, however I certainly borrowed some elements to help me realise the final project.
+
+* Nav bar drop down - [this](https://github.com/thequig-lebowski/love-running/blob/main/assets/html/signup.html) was a combination of HTML and CSS that was originally used in the walkthrough project, Love Running.
+* Responsive Media Queries Template - this (tutorial)[https://www.youtube.com/watch?v=K24lUqcT0Ms] I discovered on youtube outlined a unique way to tackle responsive design and media queries which I used.
+
+### Pictures
+All the photos used in this project were taken from the website [pexels.com](pexels.com) with the exception of one photo (bell-tent-hazel.jpg) which was taken from [Pure Space](https://purespace.ie/), a glamping site I visited in Clare.
