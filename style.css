@@ -163,7 +163,6 @@ main {
 
 #about,
 #why-stay,
-#activities,
 footer {
   margin-top: 20px;
   display: flex;
@@ -172,24 +171,22 @@ footer {
   padding: .5rem 1rem;
 }
 
+#about,
+#why-stay {
+  max-width: 900px;
+}
+
 #about-img {
-  width: 90%;
-  height: 100px;
-  background: url(assets/images/kieran-sheehan-tKIw44Q2Zro-unsplash.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 300px;
+  background: url(assets/images/Glampfield.jpg) no-repeat center center/cover;
   margin-bottom: 10px;
 }
 
 #why-stay-img {
-  width: 90%;
-  height: 100px;
-  background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
-  margin-bottom: 10px;
-}
-
-#activities-img {
-  width: 90%;
-  height: 100px;
-  background: url(https://placehold.co/400x200/blue/white?text=luxury+interior+of+tent) no-repeat center;
+  width: 100%;
+  height: 300px;
+  background: url(assets/images/yoga.jpg) no-repeat center center/cover;
   margin-bottom: 10px;
 }
 
@@ -469,7 +466,7 @@ footer ul {
   #contact button {
     margin-right: auto;
   }
- 
+
   /* Push accom-info to bottom of parent */
   .wrapper>.card:nth-child(1) p {
     margin-bottom: 54px;
@@ -493,6 +490,27 @@ footer ul {
 @media (min-width: 1280px) {
   .mq-container {
     max-width: 1280px;
+  } 
+
+  #about,
+  #why-stay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  #about {
+    margin-bottom: 50px;
+  }
+
+  #why-stay-img {
+    order: 3;
+  }
+
+  .text {
+    padding: 0 20px;
+    width: 50vw;
   }
 }
 
